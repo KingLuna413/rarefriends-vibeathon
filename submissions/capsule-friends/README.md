@@ -56,6 +56,8 @@ Walk with WASD / arrow keys or tap a destination. Station chips turn green when 
 - Consumable rule: each bought key reserves its maximum prize; kept friends retain their RF backing with no redemption expiry.
 - **All balances, keys, pulls and redemptions are simulated** and session-local; reloading resets progress.
 
+**Token activity** The Capsule vault shows a session ledger: keys bought, **RF spent**, RF redeemed, **net RF (spent − redeemed)**, pulls and best pull, plus **Spend badges** (Spender I–IV at 5 / 10 / 15 / 20 RF). The HUD also shows the running RF spent, so total RF moved through the economy is always visible.
+
 **What have you tested?**
 - `friendsdk check` (expected reward `901000000000000000`, maximum `10 RF`), `npm run check:games`, `npm run typecheck` and the game TypeScript check all pass.
 - Automated browser flow with a mock wallet/RPC: walk to the shop, buy keys, Machine ×1 and ×4 pulls, reveal, album and vault — on desktop (960×640) and phone (360px) frames.
